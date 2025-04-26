@@ -1,10 +1,7 @@
 import axios from "axios";
 
 // Determine base URL based on environment
-const isProduction = process.env.NODE_ENV === 'production';
-const baseURL = isProduction 
-  ? 'https://portfolio-backend-tco5.onrender.com/api'  // Full URL in production
-  : 'http://localhost:5000/api';  // Full URL in development
+const baseURL = 'https://portfolio-backend-tco5.onrender.com/api';
 
 const api = axios.create({
     baseURL,
